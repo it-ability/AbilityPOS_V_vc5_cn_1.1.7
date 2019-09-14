@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilepos.abc.abilitypos.VoucherDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/previous"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/small_padding"
+                android:background="@drawable/button_bg"
+                android:drawableStart="@drawable/previous_icon"
+                android:onClick="onClickPrevious"
+                android:padding="@dimen/small_margin_top"
+                android:text="@string/previous"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/next_icon"
+                android:onClick="onClickNext"
+                android:padding="@dimen/small_margin_top"
+                android:text="@string/next"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/scan_device"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/bluetooth_search" />
+
+            <TextView
+                android:id="@+id/blutetoothtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Blutetooth did not connect"
+                android:textAlignment="center"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vrno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voucher NO : 21098909878921"
+            android:textAlignment="textEnd"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cusName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Name   \t:     \t"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Remark\t:     \t"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/detailNe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Item Name"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/detailQt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Qty"
+                android:textAlignment="center"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/detailAm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Price"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/border" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="370dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/detailN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/detailQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/detailA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textSize="35sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/border" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax "
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tprice"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:text="1000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/dprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tax"
+                android:layout_marginTop="10dp"
+                android:text="Discount "
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dprice"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:text="1000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="230dp"
+                android:text="Total"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/nettotaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalPrice"
+                android:layout_alignEnd="@+id/totaltext"
+                android:text="Net Total"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/nettotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalPrice"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:text="15000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="15000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nettotalPrice"
+                android:layout_alignEnd="@+id/totaltext"
+                android:text="Receive"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/receivedPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nettotalPrice"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/receivedPayment"
+                android:layout_alignEnd="@+id/totaltext"
+                android:text="Balance"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/refundAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/receivedPayment"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/icon_background"
+            android:drawableEnd="@drawable/delete_icon"
+            android:text="Print"
+            android:textAllCaps="false"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">Ability MPos</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="validation_empty">Please Fill</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_phone">Invalid phone number</string>
+    <string name="add"><u>Add</u></string>
+
+    <string name="username">Enter User Name</string>
+    <string name="contact">Enter Contact Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="createAcc">Create Account</string>
+
+    <string name="signup"><u>Sing Up</u></string>
+    <string name="signin">Sign In</string>
+    <string name="vdetail">View Voucher Detail</string>
+
+    <string name="phone_no">09955072366</string>
+    <string name="msg_sent">Message Sent!</string>
+    <string name="ability">Ability</string>
+    <string name="msg_sent_fail">Message Sent Fail!</string>
+    <string name="version">Version 1.1.8</string>
+    <string name="company_name">Ability Software Services</string>
+    <string name="send_mail">Send Mail</string>
+
+
+    <string name="itemcode">Enter Code</string>
+    <string name="itemname">Enter Name</string>
+    <string name="pprice">Enter Purchase Price</string>
+    <string name="sprice">Enter Sale Price</string>
+    <string name="unit">Enter Unit</string>
+    <string name="additem">Add Item</string>
+    <string name="addcustomer">Add Customer</string>
+    <string name="addsupplier">Add Supplier</string>
+    <string name="addAccount">Add Account</string>
+
+
+    <string name="codetype">Select Code Type</string>
+    <string name="Customer">Customer</string>
+    <string name="Item">Item</string>
+    <string name="Supplier">Supplier</string>
+    <string name="Account">Account</string>
+
+
+    <string name="searchitem">Search Item Code or Name</string>
+    <string name="itemlist">Items List</string>
+    <string name="clear">Clear</string>
+    <string name="payment">Payment</string>
+
+    <string name="shopname">Enter Shop Name</string>
+    <string name="tax">Enter Tax Precentage</string>
+    <string name="add_v">Add</string>
+
+    <string name="code">Item Code</string>
+    <string name="name">Items Name</string>
+    <string name="pprices">Purchase Price</string>
+    <string name="sprices">Sale Price</string>
+    <string name="iunit">Unit</string>
+    <string name="update">Update</string>
+    <string name="updateUser">Update Account</string>
+    <string name="deleteUser">Delete Account</string>
+    <string name="inactive">Lock</string>
+
+    <string name="menu_search_sale">Sale Entry</string>
+    <string name="menu_search_purchase">Purchase Entry</string>
+    <string name="menu_search_cash_receive">Cash Receive</string>
+    <string name="menu_search_cash_payment">Cash Payment</string>
+    <string name="purshase_item">Purchase</string>
+    <string name="menu_add">Add New Ledger</string>
+    <string name="menu_mvoch">Manage Shop</string>
+    <string name="manage_item">Edit Ledger</string>
+    <string name="menu_other">Other</string>
+    <string name="menu_cashbook">Cash Book</string>
+    <string name="menu_report_sale">Sale Report</string>
+    <string name="menu_report_purchase">Purchase Report</string>
+    <string name="menu_report_cash_receive">Cash Receive Report</string>
+    <string name="menu_report_cash_payment">Cash Payment Report</string>
+    <string name="menu_reportdetail">Other Reports</string>
+    <string name="menu_printer">Connect Printer</string>
+    <string name="menu_management">Management</string>
+    <string name="menu_contact">Contact Us</string>
+
+    <string name="logout">Do you want to logout?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="english">English ( အဂၤလိပ္ )</string>
+    <string name="myanmar">Myanmar ( ျမန္မာ )</string>
+    <string name="english_print">Stock Print English</string>
+    <string name="myanmar_print">Stock Print Myanmar</string>
+    <string name="logouts">Logout</string>
+    <string name="language">Language</string>
+    <string name="delete">Do you want to delete this item?</string>
+
+    <string name="discount">Enter discount percentage</string>
+    <string name="back">Please click BACK again to exit</string>
+    <string name="viewDetail"><u>View</u></string>
+
+    <string name="newuser">New User</string>
+    <string name="edituser">Edit User</string>
+    <string name="companysetting">Company Setting</string>
+    <string name="exportdata">Export Data</string>
+    <string name="importdata">Import Data</string>
+    <string name="bluetooth_text1">Device did not connect!-----</string>
+    <string name="bluetooth_text2">Device connected!-----</string>
+    <string name="bluetooth_text3">Can\'t use bluetooth</string>
+    <string name="print">Print</string>
+    <string name="deletevd">Delete</string>
+    <string name="sale_invoice">Sale Invoice</string>
+    <string name="purchase_invoice">Purchase Invoice</string>
+    <string name="cash_receive_invoice">Cash Receive Invoice</string>
+    <string name="cash_payment_invoice">Cash Payment Invoice</string>
+    <string name="save">Save</string>
+    <string name="taxtext">Tax</string>
+    <string name="distext">Discount</string>
+    <string name="total">Total</string>
+    <string name="nettotal">Net Total</string>
+    <string name="receives">Receive</string>
+    <string name="paid">Paid</string>
+    <string name="refunds">Refund</string>
+    <string name="balances">Balance</string>
+
+    <string name="detailNe">Item Name</string>
+    <string name="detailQt">Qty</string>
+    <string name="detailAm">Amount</string>
+    <string name="cusNametxt">Name</string>
+    <string name="remarktxt">Remark</string>
+    <string name="vrdata">Voucher No : 21098909878921</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="applicationType">ApplicationType</string>
+    <string name="phone">Enter Phone Number</string>
+    <string name="state">Enter State or Division</string>
+    <string name="country">Enter Country</string>
+    <string name="currentPassword">Enter Current Password</string>
+    <string name="newPassword">Enter New Password</string>
+    <string name="login">Sign In</string>
+    <string name="password_label">Password</string>
+
+
+    <!--Register-->
+    <string name="register_title">Member Register</string>
+    <string name="register">Don\'t have an account?Register Now</string>
+    <string name="signIn">Do you have an account?LOGIN</string>
+    <string name="companyName">Enter Company Name</string>
+    <string name="userName">Enter User Name</string>
+    <string name="address">Enter Address </string>
+    <string name="email">Enter Email</string>
+    <string name="mobileNo">Enter Mobile No</string>
+    <string name="imeNo">IME No</string>
+    <string name="township">Enter Township</string>
+    <string name="state_division">Enter State/Division</string>
+    <string name="Country">Enter Country</string>
+    <string name="password">Enter Password</string>
+    <string name="confirmPassword">Enter Confirm Password</string>
+    <string name="registerSuccess">Registration Successfully</string>
+    <string name="registerFail">Registration Fail!</string>
+    <string name="loginSuccess">Login Successfully.</string>
+    <string name="loginInvalid">Invalid Not Match IMENo and Password.</string>
+    <string name="success_change_password">Change Password Successfully.</string>
+    <string name="change_password_error">Change Password Error.</string>
+
+    <!--error message-->
+    <string name="required">Value is required.</string>
+    <string name="err_password">Password and Confirm password are not match.</string>
+    <string name="err_length_one">Your character is over 30.</string>
+    <string name="err_length_two">Your character is over 50.</string>
+    <string name="err_length_three">Your character is over 100.</string>
+    <string name="err_old_password_wrong">Your old password is wrong.</string>
+    <string name="err_already_used_password">Your new password already used.</string>
+    <string name="err_new_confirm_password">Your new password and confirm password are not match.</string>
+
+    <!--change password-->
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_change">Change Password</string>
+
+    <!--MTGS-->
+    <string name="develop">Developed by \n Ability Software Services Co., Ltd</string>
+
+    <!--Login-->
+    <string name="login_title">Login</string>
+    <string name="email_label">Email</string>
+
+    <!--Button-->
+    <string name="sign_in_btn">LOGIN</string>
+
+    <!--Menu-->
+    <string name="add_new_ledger">Add New Ledger</string>
+    <string name="edit_ledger">Edit Ledger</string>
+    <string name="sale">Sale</string>
+    <string name="report_summary">Report Summary</string>
+    <string name="report_detail_list">Report Detail List</string>
+    <string name="management">Management</string>
+
+    <!-- Navigation -->
+    <string name="nav_login">Login</string>
+    <string name="nav_user_login">User Login</string>
+
+    <!--Management-->
+    <string name="add_user">Add User</string>
+    <string name="edit_user">Edit User</string>
+    <string name="company_setting">Company Setting</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="export_data">Export Data</string>
+    <string name="import_data">Import Data</string>
+    <string name="change_company_password">Change Company Password</string>
+
+    <!--message-->
+    <string name="logout_message">Do you want to logout?</string>
+    <string name="exit_toast_txt">Press once again to exit.</string>
+    <string name="item_success_txt">Add Item Successfully.</string>
+
+    <!--Add Item-->
+    <string name="code_type">Select Code Type</string>
+    <string name="group_code">Select group code</string>
+    <string name="group_type">Enter group Type</string>
+    <string name="purchase_price">Enter Purchase Price</string>
+    <string name="sale_price">Enter Sale Price</string>
+    <string name="add_item">Add Item</string>
+    <string name="printer_size">Please Select Printer Size</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="title_activity_report_detail">ReportDetailActivity</string>
+    <string name="listing_report">Select Report</string>
+    <string name="btn_view">View</string>
+    <string name="txt_group">Group</string>
+    <string name="txt_code">Code</string>
+    <string name="txt_name">Name</string>
+    <string name="bluetooth">Bluetooth did not connect</string>
+
+    <string name="error">Please Fill</string>
+    <string name="error_msg">Value is required.</string>
+    <string name="code_spinner">Please Select Code Type</string>
+    <string name="code_already_exit">Insert Code is already exit!!!!</string>
+    <string name="clear_data">Do you want to delete sale item?</string>
+    <string name="add_sale_item">Please add sale item.</string>
+
+    <string name="code_edit">Code</string>
+    <string name="name_edit">Name</string>
+    <string name="register_com_title">Company Register</string>
+
+
+    <!--    Compant Register-->
+    <string name="com_name">Enter Company Name</string>
+    <string name="com_address">Enter Company Address</string>
+    <string name="com_country">Enter Country</string>
+    <string name="com_province">Enter Province</string>
+    <string name="com_township">Enter Township</string>
+    <string name="com_contact_person">Enter Contact Person</string>
+    <string name="com_email"> Enter Email</string>
+    <string name="com_phno">Enter Phno</string>
+    <string name="com_datastorein">DataStorein</string>
+    <string name="registers">Register</string>
+    <string name="choose_register_dept">Choose Register Site</string>
+
+</resources>

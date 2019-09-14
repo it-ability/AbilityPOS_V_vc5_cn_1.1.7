@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.mobilepos.abc.abilitypos.PrintPreviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/scan_device"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bluetooth_search" />
+
+        <TextView
+            android:id="@+id/blutetoothtext"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Blutetooth did not connect"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/voucherNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vr2062018592012"
+        android:textAlignment="textEnd"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/cusName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="Mg mg"
+                android:textSize="25sp"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/groupcode"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:completionThreshold="1"
+                android:hint="Select Name"
+                android:textSize="25sp" />
+        </RelativeLayout>
+        <!--<AutoCompleteTextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/groupcode"
+            android:hint="Select Nme"
+            android:textSize="35sp"
+            android:completionThreshold="1"
+            android:layout_marginEnd="5dp"/>-->
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:hint="Remark"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tax "
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tprice"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:text="1000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/dprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tax"
+                android:layout_marginTop="10dp"
+                android:text="Discount "
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dprice"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:text="1000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="260dp"
+                android:text="Total"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/nettotaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totaltext"
+                android:layout_alignEnd="@+id/totaltext"
+                android:layout_marginTop="5dp"
+                android:text="Net Total"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/nettotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalPrice"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:text="15000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:text="15000"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/receivetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nettotalPrice"
+                android:layout_alignEnd="@+id/totaltext"
+                android:text="Receive"
+                android:textSize="35sp" />
+
+            <EditText
+                android:id="@+id/receivedPayment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nettotalPrice"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="0"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/refundtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/receivedPayment"
+                android:layout_alignEnd="@+id/totaltext"
+                android:layout_marginTop="5dp"
+                android:text="Refund"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/refundAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/receivedPayment"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/print"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/refundAmt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/save_icon"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/preview"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/print"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="260dp"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/printicon"
+                android:text="Print"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="35sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

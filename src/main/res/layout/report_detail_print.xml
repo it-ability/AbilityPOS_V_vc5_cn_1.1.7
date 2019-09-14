@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D8D4D4"
+        app:layout_constraintBottom_toTopOf="@+id/mainlayoutId">
+
+        <TextView
+            android:id="@+id/id_txt_view"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="@string/listing_report"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/spinll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_txt_view">
+
+            <Spinner
+                android:id="@+id/id_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edt_background_color"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_image_size"
+                android:layout_height="@dimen/icon_image_size"
+                android:layout_alignRight="@id/id_spinner"
+                android:layout_alignBottom="@id/id_spinner"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_arrow_drop_down" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fromtoll"
+            android:layout_width="290dp"
+            android:layout_height="19dp"
+            android:layout_below="@+id/id_selection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinll">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="From" />
+
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120dp"
+                android:layout_weight="0.3"
+                android:text="To" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnviewll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromtoll"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fromtoll">
+
+            <LinearLayout
+                android:id="@+id/lineatLayoutFrom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:paddingLeft="@dimen/small_margin_top">
+
+
+                <EditText
+                    android:id="@+id/id_edt_from"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background_color"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btndtFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#70C3E7"
+                    android:hint="2019/02/04"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:paddingLeft="@dimen/small_margin_top">
+
+
+                <EditText
+                    android:id="@+id/id_edt_to"
+                    android:layout_width="114dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/edt_background_color"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btndtTo"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:background="#70C3E7"
+                    android:hint="2019/02/04"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_view"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_below="@+id/id_selection"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:onClick="onClickView"
+                android:text="@string/btn_view"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mainlayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/ll1"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/comName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ability Software Services"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/comAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="street 40th ygn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comName" />
+
+            <TextView
+                android:id="@+id/comContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="090000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comAddress" />
+
+            <TextView
+                android:id="@+id/toDayDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2019/06/07  10:40:44 A.M"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comContact" />
+
+
+            <View
+                android:id="@+id/viewline1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toDayDate" />
+
+            <LinearLayout
+                android:id="@+id/id_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_title"
+                android:layout_margin="@dimen/small_padding"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewline1">
+
+                <TextView
+                    android:id="@+id/txtGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/txt_group"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/txt_code"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/txt_name"
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Type"
+                    android:textAlignment="viewEnd" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewline2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_title_layout" />
+
+            <LinearLayout
+                android:id="@+id/id_my_list_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewline2">
+
+                <!-- <ListView
+                     android:id="@+id/id_my_list_report1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="10dp"/>-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/viewline3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_my_list_report" />
+
+
+            <LinearLayout
+                android:id="@+id/lltotal"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewline3"
+                tools:ignore="UnknownId">
+
+
+                <TextView
+                    android:id="@+id/txtTotals"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Total Vr        \n\nTotal SaleAmt                \n\nTotal Discount            \n\nTotal Profits " />
+
+                <TextView
+                    android:id="@+id/textValue"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="0000.0\n\n0000.0\n\n0000.0 \n\n0000.0"
+                    android:textAlignment="viewEnd" />
+
+
+            </LinearLayout>
+            <!-- <TextView
+                 android:id="@+id/toDayDate"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="ToDayDate"
+                 android:textAlignment="viewStart"
+                 android:layout_marginTop="30dp"
+                 android:layout_gravity="center"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toBottomOf="@+id/lltotal"
+                 tools:ignore="RtlCompat" />-->
+            <TextView
+                android:id="@+id/thank_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Thank You"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lltotal" />
+
+            <!--<TextView
+                android:id="@+id/toDayDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TodayDate"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="448dp"
+                app:layout_constraintLeft_toLeftOf="@id/thank_you"
+                app:layout_constraintBottom_toBottomOf="@id/thank_you"/>-->
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/cancelPrint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/icon_background"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/printReport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_bg"
+            android:drawableEnd="@drawable/printicon"
+            android:text="Print" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

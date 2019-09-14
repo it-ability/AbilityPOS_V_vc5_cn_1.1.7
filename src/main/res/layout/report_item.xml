@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hello"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="hello"
+            android:textAlignment="viewEnd"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hello"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/totalprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hello"
+            android:textAlignment="viewEnd"
+            android:textColor="#000" />
+
+
+    </LinearLayout>
+    <!--<view
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_toBottomOf="@+id/ll"/>-->
+
+    <!-- <LinearLayout
+         android:id="@+id/title_layout"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="2dp"
+         android:orientation="horizontal"
+         android:weightSum="9"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent">
+         <TextView
+             android:id="@+id/name"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="3"
+             android:text="Item Name" />
+
+         <TextView
+             android:id="@+id/qty"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1.5"
+             android:text="Qty"
+             android:textAlignment="viewEnd"/>
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.5"
+             android:text="x"
+             android:id="@+id/cross1"/>
+
+         <TextView
+             android:id="@+id/price"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="Price"
+             android:textAlignment="center" />
+
+         <TextView
+             android:id="@+id/totalprice"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="Amount"
+             android:textAlignment="textEnd" />
+     </LinearLayout>-->
+
+</RelativeLayout>

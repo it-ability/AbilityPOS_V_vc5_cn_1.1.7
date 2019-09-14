@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#54181313</color>
+    <color name="colorPrimary">#35353C</color>
+    <!--<color name="colorPrimaryDark">#54F0E5E5</color>
+    <color name="colorPrimary">#E8E8F8</color>-->
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="white">#fff</color>
+    <color name="grey">#999797</color>
+    <color name="green">#054B27</color>
+    <color name="dark_blue">#455D88</color>
+    <color name="grey_transparent">#eceaea</color>
+    <color name="black">#111</color>
+    <color name="white_transparent">#a5ffffff</color>
+    <color name="blue">#455D88</color>
+    <color name="red">#f5060a</color>
+    <color name="bluetoothConnect">#04F03F</color>
+</resources>

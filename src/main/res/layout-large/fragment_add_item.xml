@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutadd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/edt_padding">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/codeType"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@id/codeType"
+                android:layout_alignBottom="@id/codeType"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_arrow_drop_down" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/spinner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:id="@+id/groupcode"
+                android:hint="Select group type"
+                android:textSize="35sp"
+                android:completionThreshold="1"/>-->
+            <Spinner
+                android:id="@+id/groupcode"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:spinnerMode="dropdown"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/newItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:visibility="gone"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/newItem_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:ems="10"
+                    android:hint="Enter group type"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/hideComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:src="@drawable/add"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/code_editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="@string/itemcode"
+                android:inputType="textPersonName"
+                android:maxLength="40"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="35sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="@string/itemname"
+                android:inputType="textPersonName"
+                android:maxLength="40"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="35sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/pprice_editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="@string/pprice"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="35sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/sprice_editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="@string/sprice"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="35sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/unit_editText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="@string/unit"
+                android:inputType="text"
+                android:maxLength="40"
+                android:padding="10dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="35sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_item"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button_bg"
+            android:onClick="addItem"
+            android:text="@string/additem"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="35sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

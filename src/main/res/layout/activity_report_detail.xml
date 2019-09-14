@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScrollViewll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilepos.abc.abilitypos.ReportDetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/small_margin_top">
+
+        <TextView
+            android:id="@+id/id_txt_view"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="@string/listing_report"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/id_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_txt_view"
+            android:layout_marginTop="1dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/spinll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2">
+
+                <Spinner
+                    android:id="@+id/id_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/edt_background_color"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_image_size"
+                    android:layout_height="@dimen/icon_image_size"
+                    android:layout_alignRight="@id/id_spinner"
+                    android:layout_alignBottom="@id/id_spinner"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_arrow_drop_down" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fromtoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_selection">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="0.5"
+                android:text="From" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120dp"
+                android:layout_weight="0.3"
+                android:text="To" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnviewll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromtoll"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lineatLayoutFrom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:paddingLeft="@dimen/small_margin_top">
+
+
+                <EditText
+                    android:id="@+id/id_edt_from"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background_color"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btndtFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#70C3E7"
+                    android:hint="2019/02/04"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:paddingLeft="@dimen/small_margin_top">
+
+
+                <EditText
+                    android:id="@+id/id_edt_to"
+                    android:layout_width="114dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/edt_background_color"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btndtTo"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:background="#70C3E7"
+                    android:hint="2019/02/04"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_view"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_below="@+id/id_selection"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:onClick="onClickView"
+                android:text="@string/btn_view"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        //MainLayout
+
+
+        <LinearLayout
+            android:id="@+id/id_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnviewll"
+            android:layout_marginTop="@dimen/small_margin_top"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/id_title"
+                android:background="@drawable/border" />
+
+            <LinearLayout
+                android:id="@+id/id_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_title"
+                android:layout_margin="@dimen/small_padding"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/txtGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/txt_group"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/txtCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/txt_code"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/txt_name"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Type"
+                    android:textAlignment="viewEnd" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/id_title_layout"
+                android:background="@drawable/border" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lldistance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/id_title"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <TextView
+                android:id="@+id/VoucherDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Vdate" />
+
+            <TextView
+                android:id="@+id/opening"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Opening" />
+
+            <TextView
+                android:id="@+id/vtotalamount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="TotalAmount" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/id_my_list_report1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lldistance"
+            android:layout_alignEnd="@+id/id_txt_view" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/id_my_list_report1"
+            android:background="@drawable/border" />
+
+
+        <RelativeLayout
+            android:layout_width="402dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_my_list_report1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/lltotal"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:orientation="horizontal"
+                tools:ignore="UnknownId">
+
+
+                <TextView
+                    android:id="@+id/txtTotals"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Total Vr        \n\nTotal SaleAmt                \n\nTotal Discount            \n\nTotal Profits " />
+
+                <TextView
+                    android:id="@+id/textValue"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="0000.0\n\n0000.0\n\n0000.0 \n\n0000.0"
+                    android:textAlignment="viewEnd" />
+
+
+            </LinearLayout>
+
+            <!--<ImageButton
+                android:id="@+id/scan_bluetooth_device"
+                android:layout_width="28dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="130dp"
+                android:onClick="scanBluetoothDevice"
+                android:src="@drawable/bluetooth_search" />-->
+
+            <TextView
+                android:id="@+id/blue_tooth_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="135dp"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/id_print"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="125dp"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/printicon"
+                android:text="Print"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

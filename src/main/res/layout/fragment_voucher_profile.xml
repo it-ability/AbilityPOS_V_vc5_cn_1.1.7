@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutvoucher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.mobilepos.abc.abilitypos.Fragment.VoucherProfileFragment">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+
+        <EditText
+            android:id="@+id/name_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_background_color"
+            android:hint="@string/shopname"
+            android:inputType="text"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_title" />
+
+        <EditText
+            android:id="@+id/address_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_background_color"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <EditText
+            android:id="@+id/contact_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_background_color"
+            android:ems="10"
+            android:hint="@string/contact"
+            android:inputType="phone"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <EditText
+            android:id="@+id/tax_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_background_color"
+            android:ems="10"
+            android:hint="@string/tax"
+            android:inputType="number"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/discount_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_background_color"
+            android:ems="10"
+            android:hint="@string/discount"
+            android:inputType="number"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin_top"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_code_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edt_background_color"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_image_size"
+                android:layout_height="@dimen/icon_image_size"
+                android:layout_alignRight="@id/spinner_code_type"
+                android:layout_alignBottom="@id/spinner_code_type"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_arrow_drop_down" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/create_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/add_icon"
+                android:onClick="savePrintSetting"
+                android:text="@string/add_v"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/clear_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:drawableEnd="@drawable/delete_icon"
+                android:text="@string/clear"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

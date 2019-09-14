@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Marketing</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">ျပင္ရန္</string>
+    <string name="validation_empty">ျဖည့္ရန္ လိုအပ္သည္</string>
+    <string name="invalid_email">အီးေမး မွားေနသည္</string>
+    <string name="invalid_phone">ဖုန္းနံပါတ္ မွားေနသည္</string>
+    <string name="add"><u>ထည့္မည္</u></string>
+
+    <string name="username">အမည္ ရိုက္ထည့္ပါ</string>
+    <string name="contact">ဖုန္းနံပါတ္ ရိုက္ထည့္ပါ</string>
+    <string name="email">အီးေမး ရိုက္ထည့္ပါ</string>
+    <string name="address">လိပ္စာ ရိုက္ထည့္ပါ</string>
+    <string name="password">လ်ိဳ႕ဝွက္နံပါတ္ ရိုက္ထည့္ပါ</string>
+    <string name="male">က်ား</string>
+    <string name="female">မ</string>
+    <string name="createAcc">အေကာင့္ ျပဳလုပ္မည္</string>
+
+    <string name="signup"><u>အေကာင့္ သစ္ဖြင့္ပါ</u></string>
+    <string name="signin">အေကာင့္္ဝင္ရန္</string>
+    <string name="vdetail">ေဘာင္ခ်ာ ေသးစိတ္</string>
+
+    <string name="itemcode">ကုတ္နံပါတ္ ရိုက္ထည့္ပါ</string>
+    <string name="itemname">အမည္ ရိုက္ထည့္ပါ</string>
+    <string name="pprice">အဝယ္ ေဈးႏွဳန္း ရိုက္ထည့္ပါ</string>
+    <string name="sprice">အေရာင္း ေဈးႏွဳန္း ရိုက္ထည့္ပါ</string>
+    <string name="unit">Unit ရိုက္ထည့္ပါ</string>
+    <string name="additem">ပစၥည္း အသစ္ထည့္မည္</string>
+    <string name="addcustomer">၀ယ္သူ အသစ္ထည့္မည္္</string>
+    <string name="addsupplier">ကုန္သြင္းသူ အသစ္ထည့္မည္</string>
+
+    <string name="searchitem">ပစၥည္းရွာရန္ ကုတ္နံပါတ္ (သို႔) အမည္ ကိုရိုက္ထည့္ပါ</string>
+
+    <string name="codetype">ကုတ္အမ်ိဳးအစားေရြးခ်ယ္ပါ</string>
+    <string name="Customer">၀ယ္သူ</string>
+    <string name="Item">ပစၥည္း</string>
+    <string name="Supplier">ကုန္သြင္းသူ</string>
+    <string name="Account">အေကာင့္</string>
+
+
+    <string name="itemlist">ပစၥည္း စာရင္း</string>
+    <string name="clear">ရွင္းမည္</string>
+    <string name="payment">ေပးေခ်မည္</string>
+
+
+    <string name="shopname">ဆိုင္နာမည္</string>
+    <string name="tax">အခြန္</string>
+    <string name="add_v">ထည့္မည္</string>
+
+    <string name="code">ပစၥည္း ကုတ္နံပါတ္</string>
+    <string name="name">ပစၥည္း အမည္</string>
+    <string name="pprices">အဝယ္ေဈးႏွဳန္း</string>
+    <string name="sprices">အရာင္း ေဈးႏွဳန္း</string>
+    <string name="iunit">ယူနစ္</string>
+    <string name="update">ျပင္မည္</string>
+    <string name="updateUser">အေကာင့္ ျပင္မည္</string>
+    <string name="deleteUser">အေကာင့္ဖ်က္မည္</string>
+    <string name="inactive">ပိတ္ရန္</string>
+
+    <string name="menu_search_sale">အေရာင္းထည့္ရန္</string>
+    <string name="menu_search_purchase">အဝယ္ထည့္ရန္</string>
+    <string name="menu_search_cash_receive">ေငြသားခံယူ</string>
+    <string name="menu_search_cash_payment">ေငြသားေပးေခ်</string>
+
+    <string name="purshase_item">အဝယ္</string>
+    <string name="menu_add">လယ္ဂ်ာအသစ္ ထည့္ရန္</string>
+    <string name="menu_mvoch">ဆိုင္ အခ်က္အလက္</string>
+    <string name="manage_item">လယ္ဂ်ာျပင္ရန္</string>
+    <string name="menu_other">အျခားေဆာင္ရြတ္ရန္</string>
+    <string name="menu_cashbook">ေငြစာရင္း</string>
+    <string name="menu_report_sale">အေရာင္း ေဘာင္ခ်ာ စာရင္း</string>
+    <string name="menu_report_purchase">အဝယ္ ေဘာင္ခ်ာ စာရင္း</string>
+    <string name="menu_report_cash_receive">ေငြသား ေတာင္းခံလြာ ေဘာင္ခ်ာ စာရင္း</string>
+    <string name="menu_report_cash_payment">ေငြသား ေပးေခ်မွူ ေဘာင္ခ်ာ စာရင္း</string>
+    <string name="menu_reportdetail">အျခားစာရင္းမ်ား</string>
+    <string name="menu_printer">ပရင္တာခ်ိတ္ဆက္ရန္</string>
+    <string name="menu_management">စီမံရန္</string>
+    <string name="menu_contact">ဆက္သြယ္ရန္</string>
+
+    <string name="sale_invoice">ေရာင္းခ်ေငြေတာင္းခံလႊာ</string>
+    <string name="purchase_invoice">ဝယ္ယူေငြေတာင္းခံလႊာ</string>
+    <string name="cash_receive_invoice">ေငြသား ေငြေတာင္းခံလြာ လက္ခံရရွိ</string>
+    <string name="cash_payment_invoice">ေငြသားေပးေခ်မွူေငြေတာင္းခံလြာ</string>
+
+    <string name="logout">ထြက္မွာ ေသခ်ာျပီလား</string>
+    <string name="ok">အိုေက</string>
+    <string name="cancel">မလုပ္ပါ</string>
+
+    <string name="delete">ဒီပစၥည္းဖ်က္မွာ ေသခ်ာျပီလား</string>
+
+    <string name="english">English ( အဂၤလိပ္ )</string>
+    <string name="myanmar">Myanmar ( ျမန္မာ )</string>
+    <string name="english_print">English ( အဂၤလိပ္ )</string>
+    <string name="myanmar_print">Myanmar ( ျမန္မာ )</string>
+    <string name="logouts">ထြက္မည္</string>
+    <string name="language">ဘာသာစကား</string>
+
+    <string name="discount">ေလ်ွာ့ေစ်း ရိုက္ထည့္ပါ။</string>
+    <string name="back">ေနာက္တစ္ခါထပ္ႏွိပ္ပါ</string>
+    <string name="viewDetail"><u>ၾကည့္ရန္</u></string>
+
+    <string name="newuser">အေကာင့္ အသစ္ျပဳလုပ္ရန္</string>
+    <string name="edituser">အေကာင့္ ျပင္ရန္</string>
+    <string name="companysetting">ကုမၸဏီ ျပင္ရန္</string>
+    <string name="exportdata">အခ်က္အလက္မ်ား ထုတ္ရန္</string>
+    <string name="importdata">အခ်က္အလက္မ်ား သြင္းရန္</string>
+    <string name="bluetooth_text1">ပရင္တာ မခ်ိတ္ဆက္ရေသးပါ-----</string>
+    <string name="bluetooth_text2">ပရင္တာ ခ်ိတ္ဆက္ျပီးပါျပီ-----</string>
+    <string name="bluetooth_text3">ဘလူးတူး အသံုးျပဳမရပါ</string>
+    <string name="print">ပရင့္ထုတ္မည္</string>
+    <string name="deletevd">ဖ်က္မည္</string>
+    <string name="save">သိမ္းမည္</string>
+    <string name="taxtext">အခြန္</string>
+    <string name="distext">ေလ်ာ့ေငြ</string>
+    <string name="total">စုစုေပါင္း</string>
+    <string name="nettotal">အားလံုး စုစုေပါင္း</string>
+    <string name="receives">လက္ခံ ရရွိေငြ</string>
+    <string name="paid">ေပးေငြ</string>
+    <string name="refunds">ျပန္အမ္း ေငြ</string>
+    <string name="balances">လက္က်န္ေငြ</string>
+
+
+    <string name="detailNe">ပစၥည္းအမည္</string>
+    <string name="detailQt">ပစၥည္းအေရအတြက္</string>
+    <string name="detailAm">ေငြပမာဏ</string>
+
+    <string name="cusNametxt">နာမည္</string>
+    <string name="remarktxt">ေျပာဆို</string>
+    <string name="vrdata">ေဘာင္ခ်ာနံပါတ္</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_msg">တန္ဖိ္ုးျဖည့္ရန္ လိုအပ္ပါသည္။</string>
+    <string name="code_spinner">ကုဒ္အမ်ိုးအစား ေရြးခ်ယ္ရန္ လိုအပ္ပါသည္၊</string>
+    <string name="group_code">အုပ္စု ေရြးခ်ယ္ရန္လိုအပ္ပါသည္။</string>
+    <string name="required">တန္ဖိုး ထည့္ရန္လိုအပ္ပါသည္။</string>
+    <string name="code_already_exit">ကုဒ္ အသံုးျပဳျပီးသားျဖစ္ေနပါသည္။အသစ္ထည့္ရန္လုိအပ္ပါသည္။</string>
+    <string name="clear_data">ေဒတာ ျဖတ္မွာေသခ်ာျပီလား။</string>
+    <string name="add_sale_item">၀ယ္မည့္ ပစၥည္းစာရင္းထည့္ရန္ လိုအပ္ပါသည္။</string>
+    <string name="code_edit">ကုတ္အမ်ိဳးအစား</string>
+    <string name="name_edit">အမည္ရိုက္ထည့္ပါ။</string>
+
+</resources>

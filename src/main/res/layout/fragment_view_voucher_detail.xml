@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilepos.abc.abilitypos.Fragment.ViewVoucherDetailFragment">
+
+    <ListView
+        android:id="@+id/all_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:divider="@android:color/holo_blue_dark"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>
